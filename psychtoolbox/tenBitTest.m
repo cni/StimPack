@@ -1,4 +1,13 @@
 
+%
+% See http://psychtoolbox.org/FAQ10BitFrameBufferResolution
+% Try:
+% AdditiveBlendingForLinearSuperpositionTutorial('Native10Bit')
+% (This will abort with an error if 10 bit color is not supported by your drivers/hardware)
+%
+% And run TestBitDepth.m to do a visual test.
+%
+
 AssertOpenGL;
 screens = Screen('Screens');
 screenNumber = max(screens);
